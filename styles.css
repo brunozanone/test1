@@ -1,0 +1,238 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #000000;
+    color: #ffffff;
+    font-family: 'Oswald', sans-serif;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='105' viewBox='0 0 80 105'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='death-star' fill='%23d40404' fill-opacity='0.14'%3E%3Cpath d='M20 10a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V10zm15 35a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V45zM20 75a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V75zm30-65a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V10zm0 65a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V75zM35 10a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V10zM5 45a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V45zm0-35a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V10zm60 35a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V45zm0-35a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V10z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+ul{ 
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.container{
+    width: 90%;
+    margin: auto;
+}
+
+
+
+
+/* --- NAVIGATION --- */
+.menu-btn{
+    display: none;
+}
+
+.nav-main{
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between; /* Utiliza todo el ancho disponible */
+    align-items: center;
+    height: 60px;
+    padding: 20px 0;
+}
+
+.nav-brand{
+    width: 50px; /*Tamaño Logo*/
+}
+
+
+
+
+/* --- NAV LEFT --- */
+.nav-main ul{
+    display: flex; /* Coloca cada <li> del menu uno al lado del otro*/
+}
+
+.nav-main li{
+    padding: 5px; /* Separo los <li>*/
+}
+
+.nav-main a{
+    padding: 5px; /* Da margen al hover*/
+}
+
+.nav-main a:hover{
+    border-bottom: 2px solid #fff; 
+} 
+
+.nav-menu{
+    flex: 1; /* Coloca el menu al lado del logo*/
+    margin-left: 20px;
+}
+
+hr{
+    margin: 10px 0;
+}
+
+
+
+
+/* --- SHOWCASE --- */
+
+.showcase{
+    align-items: center;  /* Centra texto*/
+    background: url('/img/showcase2.jpg') no-repeat center/cover;
+    display: flex; 
+    flex-direction: column;
+    height: 550px;
+    justify-content: flex-end; /* Situa texto en el final*/
+    margin-bottom: 20px;
+    padding: 50px;
+    width: 100%;
+}
+
+.showcase p{
+    text-align: center;
+}
+.showcase h2,
+.showcase p{
+    margin: 10px 0;
+}
+
+.btn{
+    background-color: #262626;
+    border: 1px solid #fff;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: bold;
+    padding: 10px 20px;
+    margin: 10px 0;
+}
+
+.btn:hover{
+    opacity: .6;
+}
+
+
+
+
+/* NEWS CARDS */
+
+.news-cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr; /* Alineo las 4 columnas*/
+    gap: 25px; /* Espaciado entre cada columna*/
+    /* margin: 10px 0; */
+}
+
+.news-cards img{
+    width: 100%;
+    height: 180px;
+}
+
+.news-cards h3{
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.news-cards a{
+    color: #f2f2f2;
+    display: inline-block;
+    font-weight: bold;
+    padding: 10px 0;
+    text-transform: uppercase;
+}
+
+.news-cards a:hover{ 
+    text-decoration: underline;
+}
+
+
+
+
+/* CARDS BANNER */
+.cards-banner-one,
+.cards-banner-two {
+    width: 100%;
+    height: 350px;
+    background: url('/img/tech-red.jpg') center/cover no-repeat; 
+    margin-bottom: 40px; 
+}
+
+.cards-banner-two{
+    background: url('/img/image-five.jpg') center/cover no-repeat;
+}
+
+.cards-banner-one h2,
+.cards-banner-one p,
+.cards-banner-two h2,
+.cards-banner-two p{
+    margin: 10px 0 20px 0;
+}
+
+.content{
+    width: 40%; 
+    padding: 90px 0 0 30px;
+}
+
+
+
+/* SOCIAL */
+.social {
+    margin: 50px;
+}
+
+.social p{
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.links{
+    display: flex;
+    justify-content: center; /* Posiciona los elementos en el centro */
+    /* align-items: center; */
+}
+
+.links a{
+    margin: 0 30px;
+    font-size: 50px;
+}
+
+
+
+
+/* FOOTER */
+.footer{
+    background-color: #2f3640;
+    font-size: 15px;
+    padding: 35px 0 10px;
+    margin-bottom: 20px;
+    /* align-items: flex-start; */
+    /* justify-content: center; */
+}
+
+.footer-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin-bottom: 40px;
+}
+
+.footer-container ul{
+    margin: 0 auto; /* Centra las 4 columnas*/
+}
+
+.footer-container li{
+    line-height: 2;
+}
+
+.footer h4{
+    /* font-size: 15px; */
+    color: #616161;
+    text-align: center;
+    padding-bottom: 10px;
+    
+}
